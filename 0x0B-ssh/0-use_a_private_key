@@ -1,9 +1,3 @@
-#!/bin/bash
-
-server_address="8.8.8.8"
-
-private_key_path="~/.ssh/school"
-
-username="ubuntu"
-
-ssh -i "$private_key_path" "$username"@"$server_address"
+#!/usr/bin/env bash
+# Allows us to connect to my server using the private key with user ubuntu
+ssh -i ~/.ssh/school ubuntu@8.8.8.8
